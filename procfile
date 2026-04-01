@@ -1,0 +1,1 @@
+web: gunicorn newsapi_project.wsgi

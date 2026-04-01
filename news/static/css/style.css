@@ -1,0 +1,105 @@
+ body {
+            background: #f4f6f9;
+        } 
+
+.navbar {
+    background-color: #2a5298 !important;
+        } 
+
+.navbar-brand {
+            color: rgb(245, 244, 244);
+            font-weight: bold;
+        }
+.card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+.card {
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+button {
+    border-radius: 20px;
+}
+.filter-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-btn {
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background: #e9ecef;
+    color: #333;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background: #2a5298;
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+.filter-btn.active {
+    background: #2a5298;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+}
+
+.navbar-brand span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.live-badge {
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
+
+.live-indicator {
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    animation: pulse 1s infinite;
+}
+
+.live-text {
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.5; }
+    100% { transform: scale(1); opacity: 1; }
+}
