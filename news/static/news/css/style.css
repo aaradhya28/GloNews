@@ -103,3 +103,6 @@ button {
     50% { transform: scale(1.5); opacity: 0.5; }
     100% { transform: scale(1); opacity: 1; }
 }
+#datetime {
+    font-size: 14px;
+}
