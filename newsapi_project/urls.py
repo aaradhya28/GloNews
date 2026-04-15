@@ -22,8 +22,8 @@ from news import views
 
 
 urlpatterns = [
-    path('', views.entry_page),   # 👈 entry page first
-    path('home/', views.home),
+    path('', views.entry_page,name='entry'),   
+    path('home/', views.home,name='home'),
     path('admin/', admin.site.urls),
     path('api/news/', include('news.urls')),
 ]
